@@ -1,10 +1,26 @@
 import styles from "./Statistics.module.css";
 import PropTypes from "prop-types";
 
-const Statistics = () => {
+const Statistics = ({ good, neutral, bad, total, positivePercentage}) => {
     return (
-
-    )
+        <ul className={styles.statList}>
+            <li className={styles.statListItem}>
+                <p className={styles.statText}>Good: {good}</p>
+            </li>
+            <li className={styles.statListItem}>
+                <p className={styles.statText}>Neutral: {neutral}</p>
+            </li>
+            <li className={styles.statListItem}>
+                <p className={styles.statText}>Bad: {bad}</p>
+            </li>
+            <li className={styles.statListItem}>
+                <p className={styles.statText}>Total: {total}</p>
+            </li>
+            <li className={styles.statListItem}>
+                <p className={styles.statText}>Positive feedback: {positivePercentage}%</p>
+            </li>
+    </ul>
+ )
 }
 
 Statistics.prototype = {

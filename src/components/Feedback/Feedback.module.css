@@ -5,10 +5,6 @@
   flex-direction: row;
 }
 
-.listItem {
-  flex-basis: calc(100% / 3);
-}
-
 .listItem:not(:first-child) {
-  margin-left: 50px;
+  margin-left: 10px;
 }
