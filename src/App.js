@@ -22,7 +22,7 @@ class App extends Component {
 
   onStatBtnClick = event => {
     const currentStatBtnValue = event.currentTarget.value;
-    this.setState(state => ({ ...state, [currentStatBtnValue]: state[currentStatBtnValue] + 1, }))
+    this.setState(state => ({ [currentStatBtnValue]: state[currentStatBtnValue] + 1, }))
   };
 
   countPositiveFeedbackPercentage = () => {
